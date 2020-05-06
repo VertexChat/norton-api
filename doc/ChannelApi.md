@@ -176,7 +176,7 @@ import 'package:openapi/api.dart';
 //defaultApiClient.getAuthentication<ApiKeyAuth>('LoginRequired').apiKeyPrefix = 'Bearer';
 
 var api_instance = ChannelApi();
-var channelId = channelId_example; // String | A unique identifier for a Channel.
+var channelId = 56; // int | A unique identifier for a Channel.
 
 try { 
     api_instance.deleteChannel(channelId);
@@ -189,7 +189,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelId** | **String**| A unique identifier for a Channel. | [default to null]
+ **channelId** | **int**| A unique identifier for a Channel. | [default to null]
 
 ### Return type
 
@@ -270,7 +270,7 @@ import 'package:openapi/api.dart';
 //defaultApiClient.getAuthentication<ApiKeyAuth>('LoginRequired').apiKeyPrefix = 'Bearer';
 
 var api_instance = ChannelApi();
-var channelId = channelId_example; // String | A unique identifier for a Channel.
+var channelId = 56; // int | A unique identifier for a Channel.
 
 try { 
     var result = api_instance.getChannel(channelId);
@@ -284,7 +284,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelId** | **String**| A unique identifier for a Channel. | [default to null]
+ **channelId** | **int**| A unique identifier for a Channel. | [default to null]
 
 ### Return type
 
@@ -551,7 +551,7 @@ import 'package:openapi/api.dart';
 //defaultApiClient.getAuthentication<ApiKeyAuth>('LoginRequired').apiKeyPrefix = 'Bearer';
 
 var api_instance = ChannelApi();
-var channelId = channelId_example; // String | A unique identifier for a Channel.
+var channelId = 56; // int | A unique identifier for a Channel.
 var channel = Channel(); // Channel | Updated Channel information.
 
 try { 
@@ -565,7 +565,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelId** | **String**| A unique identifier for a Channel. | [default to null]
+ **channelId** | **int**| A unique identifier for a Channel. | [default to null]
  **channel** | [**Channel**](Channel.md)| Updated Channel information. | 
 
 ### Return type

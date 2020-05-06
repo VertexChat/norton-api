@@ -70,7 +70,7 @@ Deletes an existing User.
 import 'package:openapi/api.dart';
 
 var api_instance = UserApi();
-var userId = userId_example; // String | A unique identifier for a User.
+var userId = 56; // int | A unique identifier for a User.
 
 try { 
     api_instance.deleteUser(userId);
@@ -83,7 +83,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **String**| A unique identifier for a User. | [default to null]
+ **userId** | **int**| A unique identifier for a User. | [default to null]
 
 ### Return type
 
@@ -116,7 +116,7 @@ import 'package:openapi/api.dart';
 //defaultApiClient.getAuthentication<ApiKeyAuth>('LoginRequired').apiKeyPrefix = 'Bearer';
 
 var api_instance = UserApi();
-var userId = userId_example; // String | A unique identifier for a User.
+var userId = 56; // int | A unique identifier for a User.
 
 try { 
     var result = api_instance.getUser(userId);
@@ -130,7 +130,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **String**| A unique identifier for a User. | [default to null]
+ **userId** | **int**| A unique identifier for a User. | [default to null]
 
 ### Return type
 
@@ -202,7 +202,7 @@ Updates an existing User.
 import 'package:openapi/api.dart';
 
 var api_instance = UserApi();
-var userId = userId_example; // String | A unique identifier for a User.
+var userId = 56; // int | A unique identifier for a User.
 var user = User(); // User | Updated User information.
 
 try { 
@@ -216,7 +216,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **String**| A unique identifier for a User. | [default to null]
+ **userId** | **int**| A unique identifier for a User. | [default to null]
  **user** | [**User**](User.md)| Updated User information. | 
 
 ### Return type

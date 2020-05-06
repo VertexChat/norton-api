@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 // tests for Channel
 void main() {
-    var instance = new Channel();
+  var instance = new Channel();
 
   group('test Channel', () {
     // int id (default value: null)
@@ -20,8 +20,5 @@ void main() {
     test('to test the property `type`', () async {
       // TODO
     });
-
-
   });
-
 }

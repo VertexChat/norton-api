@@ -57,7 +57,7 @@ class UserApi {
   /// Delete a User with HTTP info returned
   ///
   /// Deletes an existing User.
-  Future deleteUserWithHttpInfo(String userId) async {
+  Future deleteUserWithHttpInfo(int userId) async {
     Object postBody;
 
     // verify required params are set
@@ -95,7 +95,7 @@ class UserApi {
   /// Delete a User
   ///
   /// Deletes an existing User.
-  Future deleteUser(String userId) async {
+  Future deleteUser(int userId) async {
     Response response = await deleteUserWithHttpInfo(userId);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
@@ -108,7 +108,7 @@ class UserApi {
   /// Get a User with HTTP info returned
   ///
   /// Gets the details of a single instance of a User.
-  Future<Response> getUserWithHttpInfo(String userId) async {
+  Future<Response> getUserWithHttpInfo(int userId) async {
     Object postBody;
 
     // verify required params are set
@@ -146,7 +146,7 @@ class UserApi {
   /// Get a User
   ///
   /// Gets the details of a single instance of a User.
-  Future<User> getUser(String userId) async {
+  Future<User> getUser(int userId) async {
     Response response = await getUserWithHttpInfo(userId);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
@@ -210,7 +210,7 @@ class UserApi {
   /// Update a User with HTTP info returned
   ///
   /// Updates an existing User.
-  Future updateUserWithHttpInfo(String userId, User user) async {
+  Future updateUserWithHttpInfo(int userId, User user) async {
     Object postBody = user;
 
     // verify required params are set
@@ -251,7 +251,7 @@ class UserApi {
   /// Update a User
   ///
   /// Updates an existing User.
-  Future updateUser(String userId, User user) async {
+  Future updateUser(int userId, User user) async {
     Response response = await updateUserWithHttpInfo(userId, user);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));

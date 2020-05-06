@@ -165,7 +165,7 @@ class ChannelApi {
   /// Delete a Channel with HTTP info returned
   ///
   /// Deletes an existing Channel.
-  Future deleteChannelWithHttpInfo(String channelId) async {
+  Future deleteChannelWithHttpInfo(int channelId) async {
     Object postBody;
 
     // verify required params are set
@@ -203,7 +203,7 @@ class ChannelApi {
   /// Delete a Channel
   ///
   /// Deletes an existing Channel.
-  Future deleteChannel(String channelId) async {
+  Future deleteChannel(int channelId) async {
     Response response = await deleteChannelWithHttpInfo(channelId);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
@@ -271,7 +271,7 @@ class ChannelApi {
   /// Get a Channel with HTTP info returned
   ///
   /// Gets the details of a single instance of a Channel.
-  Future<Response> getChannelWithHttpInfo(String channelId) async {
+  Future<Response> getChannelWithHttpInfo(int channelId) async {
     Object postBody;
 
     // verify required params are set
@@ -309,7 +309,7 @@ class ChannelApi {
   /// Get a Channel
   ///
   /// Gets the details of a single instance of a Channel.
-  Future<Channel> getChannel(String channelId) async {
+  Future<Channel> getChannel(int channelId) async {
     Response response = await getChannelWithHttpInfo(channelId);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
@@ -383,6 +383,7 @@ class ChannelApi {
     Object postBody;
 
     // verify required params are set
+
 
     // create path and map variables
     String path = "/channels".replaceAll("{format}", "json");
@@ -597,7 +598,7 @@ class ChannelApi {
   /// Update a Channel with HTTP info returned
   ///
   /// Updates an existing Channel.
-  Future updateChannelWithHttpInfo(String channelId, Channel channel) async {
+  Future updateChannelWithHttpInfo(int channelId, Channel channel) async {
     Object postBody = channel;
 
     // verify required params are set
@@ -638,7 +639,7 @@ class ChannelApi {
   /// Update a Channel
   ///
   /// Updates an existing Channel.
-  Future updateChannel(String channelId, Channel channel) async {
+  Future updateChannel(int channelId, Channel channel) async {
     Response response = await updateChannelWithHttpInfo(channelId, channel);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));

@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 // tests for Message
 void main() {
-    var instance = new Message();
+  var instance = new Message();
 
   group('test Message', () {
     // int id (default value: null)
@@ -30,8 +30,5 @@ void main() {
     test('to test the property `timestamp`', () async {
       // TODO
     });
-
-
   });
-
 }

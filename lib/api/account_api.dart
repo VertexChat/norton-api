@@ -2,6 +2,11 @@ part of openapi.api;
 
 class AccountApi {
   final ApiClient apiClient;
+  var api_instance = UserApi();
+
+  bool _isLoggedIn = false;
+
+  bool get isLoggedIn => _isLoggedIn;
 
   AccountApi([ApiClient apiClient]) : apiClient = apiClient ?? defaultApiClient;
 
@@ -22,6 +27,7 @@ class AccountApi {
     // query params
     List<QueryParam> queryParams = [];
     Map<String, String> headerParams = {};
+    headerParams['set-cookie'];
     Map<String, String> formParams = {};
 
     List<String> contentTypes = ["application/json"];
@@ -46,10 +52,14 @@ class AccountApi {
   /// Attempts to log a user in
   Future login(InlineObject inlineObject) async {
     Response response = await loginWithHttpInfo(inlineObject);
+
     if (response.statusCode >= 400) {
+      _isLoggedIn = false;
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
     } else if (response.body != null) {
+      _isLoggedIn = true;
     } else {
+      _isLoggedIn = true;
       return;
     }
   }

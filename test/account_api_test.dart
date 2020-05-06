@@ -1,7 +1,6 @@
 import 'package:openapi/api.dart';
 import 'package:test/test.dart';
 
-
 /// tests for AccountApi
 void main() {
   var instance = AccountApi();
@@ -11,7 +10,7 @@ void main() {
     //
     // Attempts to log a user in
     //
-    //Future login(InlineObject inlineObject) async 
+    //Future login(InlineObject inlineObject) async
     test('test login', () async {
       // TODO
     });
@@ -20,10 +19,9 @@ void main() {
     //
     // Attempts to register a new user
     //
-    //Future register(InlineObject inlineObject) async 
+    //Future register(InlineObject inlineObject) async
     test('test register', () async {
       // TODO
     });
-
   });
 }

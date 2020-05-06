@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 // tests for User
 void main() {
-    var instance = new User();
+  var instance = new User();
 
   group('test User', () {
     // int id (default value: null)
@@ -15,8 +15,5 @@ void main() {
     test('to test the property `name`', () async {
       // TODO
     });
-
-
   });
-
 }

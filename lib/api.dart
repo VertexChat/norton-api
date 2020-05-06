@@ -2,6 +2,7 @@ library openapi.api;
 
 import 'dart:async';
 import 'dart:convert';
+import 'dart:html';
 import 'package:http/http.dart';
 
 part 'api_client.dart';
@@ -21,6 +22,5 @@ part 'model/error.dart';
 part 'model/inline_object.dart';
 part 'model/message.dart';
 part 'model/user.dart';
-
 
 ApiClient defaultApiClient = ApiClient();

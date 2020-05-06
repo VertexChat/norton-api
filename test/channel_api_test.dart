@@ -1,13 +1,12 @@
 import 'package:openapi/api.dart';
 import 'package:test/test.dart';
 
-
 /// tests for ChannelApi
 void main() {
   var instance = ChannelApi();
 
   group('tests for ChannelApi', () {
-    //Future addUserToChannel(int channelId, User user) async 
+    //Future addUserToChannel(int channelId, User user) async
     test('test addUserToChannel', () async {
       // TODO
     });
@@ -16,7 +15,7 @@ void main() {
     //
     // Creates a new instance of a Channel.
     //
-    //Future createChannel(Channel channel) async 
+    //Future createChannel(Channel channel) async
     test('test createChannel', () async {
       // TODO
     });
@@ -25,7 +24,7 @@ void main() {
     //
     // Creates a new instance of a Message.
     //
-    //Future createMessage(int channelId, Message message) async 
+    //Future createMessage(int channelId, Message message) async
     test('test createMessage', () async {
       // TODO
     });
@@ -34,7 +33,7 @@ void main() {
     //
     // Deletes an existing Channel.
     //
-    //Future deleteChannel(String channelId) async 
+    //Future deleteChannel(int channelId) async
     test('test deleteChannel', () async {
       // TODO
     });
@@ -43,7 +42,7 @@ void main() {
     //
     // Deletes an existing Message.
     //
-    //Future deleteMessage(int channelId, int messageId) async 
+    //Future deleteMessage(int channelId, int messageId) async
     test('test deleteMessage', () async {
       // TODO
     });
@@ -52,7 +51,7 @@ void main() {
     //
     // Gets the details of a single instance of a Channel.
     //
-    //Future<Channel> getChannel(String channelId) async 
+    //Future<Channel> getChannel(String channelId) async
     test('test getChannel', () async {
       // TODO
     });
@@ -61,7 +60,7 @@ void main() {
     //
     // Gets a list of all Users in a given Channel.
     //
-    //Future<List<User>> getChannelMembers(int channelId) async 
+    //Future<List<User>> getChannelMembers(int channelId) async
     test('test getChannelMembers', () async {
       // TODO
     });
@@ -70,7 +69,7 @@ void main() {
     //
     // Gets a list of all Channel entities.
     //
-    //Future<List<Channel>> getChannels() async 
+    //Future<List<Channel>> getChannels() async
     test('test getChannels', () async {
       // TODO
     });
@@ -79,7 +78,7 @@ void main() {
     //
     // Gets the details of a single instance of a Message.
     //
-    //Future<Message> getMessage(int channelId, int messageId) async 
+    //Future<Message> getMessage(int channelId, int messageId) async
     test('test getMessage', () async {
       // TODO
     });
@@ -88,7 +87,7 @@ void main() {
     //
     // Gets a list of all Message entities.
     //
-    //Future<List<Message>> getMessages(int channelId) async 
+    //Future<List<Message>> getMessages(int channelId) async
     test('test getMessages', () async {
       // TODO
     });
@@ -97,7 +96,7 @@ void main() {
     //
     // Removes a User for a Channel
     //
-    //Future removeChannelMember(int channelId, int userId) async 
+    //Future removeChannelMember(int channelId, int userId) async
     test('test removeChannelMember', () async {
       // TODO
     });
@@ -106,7 +105,7 @@ void main() {
     //
     // Updates an existing Channel.
     //
-    //Future updateChannel(String channelId, Channel channel) async 
+    //Future updateChannel(int channelId, Channel channel) async
     test('test updateChannel', () async {
       // TODO
     });
@@ -115,10 +114,9 @@ void main() {
     //
     // Updates an existing Message.
     //
-    //Future updateMessage(int channelId, int messageId, Message message) async 
+    //Future updateMessage(int channelId, int messageId, Message message) async
     test('test updateMessage', () async {
       // TODO
     });
-
   });
 }
